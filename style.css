@@ -1,0 +1,84 @@
+.block{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    /* transition: all 1s; */
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.block2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: blockmove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes blockmove{
+    0%{
+        background-color: rebeccapurple;
+        transform: rotate(0);
+        margin-left: 0px;
+        border-radius: 25px;
+    }
+    50%
+    {
+        background-color: red;
+        border-radius: 40px;
+        transform: rotate(50px);
+    }
+    100%{
+        background-color: blueviolet;
+        transform: rotate(720deg);
+        margin-left: 1255px;
+    }
+}
+/* .block:hover{
+    background-color: red;
+}
+.block:active{
+    background-color: aqua;
+} */
+
+@keyframes colorchange{
+    from{
+        background-color: green;
+        border-radius: 0;
+        margin-left: 0;
+        transform: rotate(0);
+    } to{
+        background-color: blue;
+        border-radius: 100%;
+        margin-left: 1205px;
+        transform: rotate(8000000020deg);
+    }
+}
+.block1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: bloch;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes bloch {
+    0% {
+        background-color: red;
+        transform: rotate(0);
+        margin-left: 0;
+    }
+    50% {
+        background-color: aqua;
+    }
+    80% {
+        background-color: blue;
+    }
+    100% {
+        background-color: grey;
+        transform: rotate(802deg);
+        margin-left: 1255px;
+    }
+}
